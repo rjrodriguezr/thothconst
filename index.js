@@ -2,6 +2,7 @@ const campaign = require('./constants/campaign');
 const channels = require('./constants/channels');
 const conversation = require('./constants/conversation');
 const http = require('./constants/http');
+const inventory = require('./constants/inventory');
 const messages = require('./constants/messages');
 const redis = require('./constants/redis');
 const users = require('./constants/users');
@@ -20,6 +21,7 @@ module.exports = {
     ...channels,
     ...conversation,
     ...http,
+    ...inventory,
     ...messages,
     ...redis,
     ...users,
