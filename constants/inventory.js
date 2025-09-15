@@ -20,9 +20,29 @@ const unitMeasureCategories = Object.freeze({
     VOLUMEN: "VOL", // Productos medidos por capacidad (litros, metros cúbicos) (ej.: líquidos, gases).
 });
 
+// DICCIONARIO PARA OBTENER EL CÓDIGO DE BD A PARTIR DEL TIPO DESCRIPTIVO
+const movementTypes = Object.freeze({
+    ADJUSTMENT_IN: 'ADIN',      // Código para Ajuste de Entrada
+    ADJUSTMENT_OUT: 'ADOUT',    // Código para Ajuste de Salida
+    SALE: 'SALE',               // Código para Venta
+    PURCHASE_RECEIPT: 'PREC',   // Código para Recepción de Compra
+    RETURN_CUSTOMER: 'RCIN',    // Código para Devolución de Cliente
+    RETURN_SUPPLIER: 'RSOUT',   // Código para Devolución a Proveedor
+    TRANSFER_OUT: 'TXOUT',      // Código para Transferencia Enviada
+    TRANSFER_IN: 'TXIN'         // Código para Transferencia Recibida
+});
+
+const movementCategories = Object.freeze({
+    INBOUND: 'INBD',
+    OUTBOUND: 'OTBD'
+});
+
+
 module.exports = {
     currency,
     stockStatus,
     unitMeasureCategories,
+    movementTypes,
+    movementCategories
 };
 
