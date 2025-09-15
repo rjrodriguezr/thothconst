@@ -34,7 +34,8 @@ const movementTypes = Object.freeze({
 
 const movementCategories = Object.freeze({
     INBOUND: 'INBD',
-    OUTBOUND: 'OTBD'
+    OUTBOUND: 'OTBD',
+    ALL: 'ALL' // Incluye tanto INBOUND como OUTBOUND para ser usado por los ajustes principalmente
 });
 
 
