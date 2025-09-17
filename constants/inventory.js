@@ -20,6 +20,40 @@ const unitMeasureCategories = Object.freeze({
     VOLUMEN: "VOL", // Productos medidos por capacidad (litros, metros cúbicos) (ej.: líquidos, gases).
 });
 
+const unitOfMeasure = Object.freeze({
+  // Clave de categoría (PHS)
+  [unitMeasureCategories.FISICO]: {
+    // Clave de unidad (UNT) y valor a almacenar en BD
+    UNT: "UNT", // Unidad
+    PKG: "PKG", // Paquete
+    BXC: "BXC", // Caja
+    PLT: "PLT", // Palet
+  },
+  [unitMeasureCategories.PESO]: {
+    KG: "KG", // Kilogramo
+    GR: "GR", // Gramo
+  },
+  [unitMeasureCategories.VOLUMEN]: {
+    LTR: "LTR", // Litro
+    M3: "M3", // Metro Cúbico
+  },
+  [unitMeasureCategories.ESPECIFICO]: {
+    LTC: "LTC", // Lote
+    ROL: "ROL", // Rollo
+    PAR: "PAR", // Par
+    DOZ: "DOZ", // Docena
+  },
+  [unitMeasureCategories.GRANEL]: {
+    BLK: "BLK", // Granel
+    DRM: "DRM", // Bidón
+  },
+  [unitMeasureCategories.OTROS]: {
+    BAG: "BAG", // Bolsa
+    BTL: "BTL", // Botella
+    CNT: "CNT", // Contenedor
+  },
+});
+
 // DICCIONARIO PARA OBTENER EL CÓDIGO DE BD A PARTIR DEL TIPO DESCRIPTIVO
 const movementTypes = Object.freeze({
     ADJUSTMENT_IN: 'ADIN',      // Código para Ajuste de Entrada
@@ -43,6 +77,7 @@ module.exports = {
     currency,
     stockStatus,
     unitMeasureCategories,
+    unitOfMeasure,
     movementTypes,
     movementCategories
 };
