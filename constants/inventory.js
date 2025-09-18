@@ -72,13 +72,23 @@ const movementCategories = Object.freeze({
     ALL: 'ALL' // Incluye tanto INBOUND como OUTBOUND para ser usado por los ajustes principalmente
 });
 
+const adjustmentReasons = {
+    COUNT: 'CNT',  // Corrección por Conteo Físico (CouNT)
+    LOSS:  'LSS',  // Baja por Merma / Daño (LoSS)
+    EXPIRE: 'EXP', // Baja por Vencimiento (EXPiration)
+    INITIAL: 'INI', // Carga de Saldo Inicial (INItial)
+    FOUND: 'FND',  // Ingreso por Hallazgo (FouND)
+    OTHER: 'OTH'   // Otros (OTHer)
+};
+
 
 module.exports = {
+    adjustmentReasons,
     currency,
+    movementCategories,
+    movementTypes,
     stockStatus,
     unitMeasureCategories,
     unitOfMeasure,
-    movementTypes,
-    movementCategories
 };
 
