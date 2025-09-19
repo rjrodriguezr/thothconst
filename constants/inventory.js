@@ -55,7 +55,7 @@ const unitOfMeasure = Object.freeze({
 });
 
 // DICCIONARIO PARA OBTENER EL CÓDIGO DE BD A PARTIR DEL TIPO DESCRIPTIVO
-const movementTypes = Object.freeze({
+const movementCategories = Object.freeze({
     ADJUSTMENT_IN: 'ADIN',      // Código para Ajuste de Entrada
     ADJUSTMENT_OUT: 'ADOUT',    // Código para Ajuste de Salida
     SALE: 'SALE',               // Código para Venta
@@ -66,10 +66,9 @@ const movementTypes = Object.freeze({
     TRANSFER_IN: 'TXIN'         // Código para Transferencia Recibida
 });
 
-const movementCategories = Object.freeze({
+const movementTypes = Object.freeze({
     INBOUND: 'INBD',
     OUTBOUND: 'OTBD',
-    ALL: 'ALL' // Incluye tanto INBOUND como OUTBOUND para ser usado por los ajustes principalmente
 });
 
 const adjustmentReasons = {
