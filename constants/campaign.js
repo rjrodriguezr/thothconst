@@ -3,8 +3,7 @@ const campaignStatuses = Object.freeze({
     SCHEDULED: 'SCHEDULED',
     PROCESSING: 'PROCESSING',
     COMPLETED: 'COMPLETED',
-    PAUSED: 'PAUSED',
-    FAILED: 'FAILED'
+    PAUSED: 'PAUSED'
 });
 
 module.exports = {
