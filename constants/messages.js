@@ -19,6 +19,7 @@ const deliveryType = Object.freeze({
     SENT: 'sent',
     DELIVERED: 'delivered',
     READ: 'read',
+    READ: 'deleted',
     FAILED: 'failed'
 });
 
